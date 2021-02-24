@@ -81,7 +81,7 @@ main .content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   flex: 1;
 }
 
@@ -94,6 +94,7 @@ main .content {
   margin-top: 1rem;
   font-family: GraphikLight;
   opacity: 0.6;
+  text-shadow: 0px 0px 8px rgb(255, 255, 255);
 }
 
 .content p {
@@ -104,6 +105,7 @@ main .content {
   font-family: GraphikLight;
   margin: 0.5rem 0;
   color: rgba(255, 255, 255, 0.95);
+  text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.479);
 }
 
 .content .anim-up {
@@ -116,6 +118,12 @@ main .content {
   border-radius: 5px;
   font-size: 18px;
   font-family: GraphikLight;
+  /* transition: 0.2s all ease-in-out; */
+  text-shadow: 0px 0px 8px rgb(255, 255, 255);
+}
+
+.anim-up:hover {
+  box-shadow: 0px 0px 8px #b921ffd0;
 }
 
 /* about page */
@@ -305,6 +313,7 @@ main .content {
   margin-bottom: 1rem;
   overflow: hidden;
   position: relative;
+  background: #fff;
 }
 
 .speaker .speaker-top {
@@ -347,6 +356,7 @@ main .content {
   width: 120px;
   height: 120px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .speaker h2 {
@@ -410,7 +420,7 @@ main .content {
 }
 
 .slider1 img {
-  animation: rotation 1s ease-in-out;
+  animation: rotation 1s ease-in-out infinite;
 }
 
 @keyframes rotation {
@@ -658,23 +668,85 @@ main .content {
 #answer2 {
   display: none;
   opacity: 0;
-  text-align: center;
-}
-
-#answer2 a {
-  display: inline-block;
-  margin: 1rem 0;
-  text-decoration: none;
-  padding: 1rem 2rem;
-  color: #fff;
-  background: #21d4fd;
-  border-radius: 5px;
-  font-size: 16px;
 }
 
 #answer3 {
   display: none;
   opacity: 0;
+}
+
+#answer5 {
+  display: none;
+  opacity: 0;
+}
+
+#answer6 {
+  display: none;
+  opacity: 0;
+}
+
+.faq .sponsors {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sponsors .sponsor-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.sponsor-list img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.footer {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer .socials {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.socials a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  padding: 1rem;
+}
+
+a .btn {
+  font-size: 24px;
+}
+
+.footer h4 {
+  text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.705);
+  color: #fff;
+  margin-top: 1rem;
+}
+
+.footer p {
+  text-align: center;
+  color: #fff;
+  text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.705);
+  margin-top: 2rem;
 }
 
 .faq .custom-shape-divider-top-1613769887 {
@@ -913,6 +985,12 @@ main .content {
   .workshops-container .workshop {
     width: 40%;
   }
+
+  .sponsor-list img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+  }
 }
 
 @media (min-width: 1040px) {
@@ -982,7 +1060,7 @@ main .content {
   main .content p {
     font-size: 22px;
     line-height: 1.8;
-    font-family: GraphikMedium;
+    font-family: GraphikLight;
   }
 
   .about .custom-shape-divider-top-1613770382 {
@@ -1095,10 +1173,6 @@ main .content {
     text-align: left;
   }
 
-  .speakers {
-    height: 90vh;
-  }
-
   .speakers .speaker {
     width: 30%;
     padding: 2rem 1.5rem;
@@ -1174,7 +1248,7 @@ main .content {
   .conference .conf {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     padding: 1rem 0;
     height: 90vh;

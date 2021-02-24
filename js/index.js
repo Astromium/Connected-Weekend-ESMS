@@ -16,7 +16,10 @@ window.onload = setTimeout(() => {
   const answer2 = document.getElementById("answer2");
   const chevron3 = document.getElementById("chevron-3");
   const answer3 = document.getElementById("answer3");
-
+  const chevron5 = document.getElementById("chevron-5");
+  const answer5 = document.getElementById("answer5");
+  const chevron6 = document.getElementById("chevron-6");
+  const answer6 = document.getElementById("answer6");
   /* menu animations */
   const tl1 = new TimelineMax({ paused: true, reversed: true });
 
@@ -74,6 +77,26 @@ window.onload = setTimeout(() => {
 
   chevron3.addEventListener("click", () => {
     faq3.reversed() ? faq3.play() : faq3.reverse();
+  });
+
+  const faq5 = new TimelineMax({ paused: true, reversed: true });
+
+  faq5
+    .to(chevron5, 0.2, { rotate: "180deg" })
+    .to(answer5, 0.2, { display: "block", opacity: 1 }, "-=0.1");
+
+  chevron5.addEventListener("click", () => {
+    faq5.reversed() ? faq5.play() : faq5.reverse();
+  });
+
+  const faq6 = new TimelineMax({ paused: true, reversed: true });
+
+  faq6
+    .to(chevron6, 0.2, { rotate: "180deg" })
+    .to(answer6, 0.2, { display: "block", opacity: 1 }, "-=0.1");
+
+  chevron6.addEventListener("click", () => {
+    faq6.reversed() ? faq6.play() : faq6.reverse();
   });
 
   /* initial animation */
@@ -135,12 +158,7 @@ window.onload = setTimeout(() => {
     { opacity: 1, scale: 1, duration: 0.5 }
   );
 
-  start.fromTo(
-    ".anim-up",
-    { opacity: 0, translateY: "50%" },
-    { opacity: 1, translateY: "0%", duration: 1 },
-    "-=1.5"
-  );
+  start.fromTo(".anim-up", { opacity: 0 }, { opacity: 1, duration: 0.5 });
 
   // agenda timeline
   let tl2 = gsap.timeline({
@@ -161,6 +179,34 @@ window.onload = setTimeout(() => {
   let tl4 = gsap.timeline({
     scrollTrigger: {
       trigger: ".event-desc",
+      start: "center bottom",
+    },
+  });
+
+  let tl5 = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".workshops",
+      start: "center bottom",
+    },
+  });
+
+  let tl6 = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".conference",
+      start: "center bottom",
+    },
+  });
+
+  let tl7 = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".faq",
+      start: "top center",
+    },
+  });
+
+  let tl8 = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".footer",
       start: "center bottom",
     },
   });
@@ -199,10 +245,9 @@ window.onload = setTimeout(() => {
       { scaleY: 0, opacity: 0, duration: 0.8, transformOrigin: "top" },
       "-=0.7"
     )
-    .from(".speaker-img", { opacity: 0, duration: 0.8 }, "-=0.5")
     .from(".speaker-name", { x: -20, opacity: 0, duration: 0.4 })
-    .from(".role", { x: -20, opacity: 0, duration: 0.4 })
-    .from(".speaker-info", { y: 20, opacity: 0, duration: 0.8 }, "-=0.2");
+    .from(".speaker-info", { y: 20, opacity: 0, duration: 0.8 }, "-=0.2")
+    .from(".speaker-img", { opacity: 0, duration: 0.2 });
 
   tl4
     .from(".video", { opacity: 0, y: -20, duration: 0.5 })
@@ -215,6 +260,46 @@ window.onload = setTimeout(() => {
       { opacity: 1, scale: 1, duration: 0.5, delay: 0.5 }
     );
 
+  tl5.from(".workshop", {
+    opacity: 0,
+    scale: 0,
+    transformOrigin: "center",
+    duration: 0.4,
+  });
+
+  tl6
+    .from(".circuit", { opacity: 0, x: -100, duration: 0.3 })
+    .from(".conf-line", {
+      scaleX: 0,
+      transformOrigin: "center",
+      opacity: 1,
+      duration: 0.4,
+    })
+    .from(".conf-circle", { opacity: 0, duration: 0.2 })
+    .from(".about-conf p", { opacity: 0, duration: 0.2 });
+
+  tl7
+    .from(".faq-h1", { y: -20, opacity: 0, duration: 0.2 })
+    .from(".question", { x: -20, opacity: 0, duration: 0.4, stagger: 0.2 })
+    .from(".sponsor-h1", { y: -20, opacity: 0, duration: 0.2 })
+    .from(".sponsor-list img", {
+      x: -20,
+      opacity: 0,
+      duration: 0.4,
+      stagger: 0.2,
+    });
+
+  tl8
+    // .from(".follow", { y: -20, opacity: 0, duration: 0.2 })
+    .from(".footer img", {
+      scale: 0,
+      transformOrigin: "center",
+      opacity: 0,
+      duration: 0.2,
+    })
+    .from(".btn", { opacity: 0, y: 10, duration: 0.2, stagger: 0.1 })
+    .from(".footer h4", { opacity: 0, x: -20, duration: 0.2 })
+    .from(".footer p", { opacity: 0, x: -20, duration: 0.2 });
   //document.querySelector(".container").style.display = "none";
 
   /* menu animations */
