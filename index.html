@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css"
+    />
+    <meta name="theme-color" content="#0acffe" />
+    <title>Connected Weekend</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="nav">
+        <nav>
+          <img src="./assets/logo.svg" alt="logo" />
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#speakers">Speakers</a></li>
+            <li><a href="#agenda">Agenda</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="/">Register</a></li>
+          </ul>
+          <svg
+            class="menu"
+            width="43"
+            height="23"
+            viewBox="0 0 43 23"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line y1="1.5" x2="43" y2="1.5" stroke="#0acffe" stroke-width="3" />
+            <line
+              y1="11.5"
+              x2="28"
+              y2="11.5"
+              stroke="#b721ff"
+              stroke-width="3"
+            />
+            <line
+              y1="21.5"
+              x2="16"
+              y2="21.5"
+              stroke="#6028e4"
+              stroke-width="3"
+            />
+          </svg>
+        </nav>
+      </header>
+      <div class="nav-open">
+        <div class="home">
+          <a href="#">Home</a>
+        </div>
+        <div class="about-menu">
+          <a href="#about">About</a>
+        </div>
+        <div class="speakers-menu">
+          <a href="#speakers">Speakers</a>
+        </div>
+        <div class="agenda-menu">
+          <a href="#agenda">Agenda</a>
+        </div>
+        <div class="faq-menu">
+          <a href="#faq">FAQ</a>
+        </div>
+        <div class="register">
+          <a href="/">Register</a>
+        </div>
+      </div>
+      <main>
+        <div class="main-slider"></div>
+        <!-- <img class="anim-down" src="./assets/iot.jpg" alt="robot" /> -->
+        <lottie-player
+          class="lottie"
+          src="./assets/animations/testing_tech_colored.json"
+          background="transparent"
+          speed="1"
+          loop
+          autoplay
+        ></lottie-player>
+        <div class="content">
+          <h1 class="anim-right">Connected Weekend</h1>
+          <p class="anim-right">
+            BUILD. CREATE. & CONNECT TO THE WORLD OF HARDWARE.
+          </p>
+          <a href="/about.html" class="anim-up">Register</a>
+        </div>
+
+        <div class="custom-shape-divider-top-1613769887">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+              opacity=".25"
+              class="shape-fill"
+            ></path>
+            <path
+              d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+              opacity=".5"
+              class="shape-fill"
+            ></path>
+            <path
+              d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
+
+        <!--wave bottom-->
+        <!-- <div class="custom-shape-divider-bottom-1613772114">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+              opacity=".25"
+              class="shape-fill"
+            ></path>
+            <path
+              d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+              opacity=".5"
+              class="shape-fill"
+            ></path>
+            <path
+              d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div> -->
+      </main>
+      <div id="about" class="about">
+        <h1>What is Connected Weekend ?</h1>
+        <img
+          src="./assets/waveBottom1.svg"
+          class="custom-shape-divider-top-1613770382"
+          alt=""
+        />
+        <!-- <div class="custom-shape-divider-top-1613770382">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+              opacity=".25"
+              class="shape-fill"
+            ></path>
+            <path
+              d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+              opacity=".5"
+              class="shape-fill"
+            ></path>
+            <path
+              d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div> -->
+        <div class="about-desc">
+          <!-- <img src="./assets/blob.svg" alt="blob" class="blob animated-blob" />
+          <img
+            src="./assets/blob2.svg"
+            alt="blob"
+            class="blob2 animated-blob"
+          />
+          <img
+            src="./assets/blob2.svg"
+            alt="blob"
+            class="blob3 animated-blob"
+          />
+          <img
+            src="./assets/blob3.svg"
+            alt="blob"
+            class="blob4 animated-blob"
+          />
+          <img
+            src="./assets/blob3.svg"
+            alt="blob"
+            class="blob5 animated-blob"
+          /> -->
+          <img
+            src="./assets/rectangle-cyan.svg"
+            alt="blob"
+            class="blob animated-blob"
+          />
+          <img
+            src="./assets/circle-cyan-filled.svg"
+            alt="blob"
+            class="blob2 animated-blob"
+          />
+          <img
+            src="./assets/circle-cyan.svg"
+            alt="blob"
+            class="blob3 animated-blob"
+          />
+          <img
+            src="./assets/rectangle-violet-filled.svg"
+            alt="blob"
+            class="blob4 animated-blob"
+          />
+          <img
+            src="./assets/rectangle-violet.svg"
+            alt="blob"
+            class="blob5 animated-blob"
+          />
+          <img
+            src="./assets/circle-cyan.svg"
+            alt="blob"
+            class="blob6 animated-blob"
+          />
+          <iframe
+            class="video border-gradient border-gradient-purple"
+            src="https://www.youtube.com/embed/WnjAEbymV1c"
+            frameborder="0"
+          ></iframe>
+          <div class="event-desc">
+            <div class="top-border">
+              <div class="border-line horizontal"></div>
+              <div class="border-circle"></div>
+            </div>
+            <div class="bot-border">
+              <div class="border-line horizontal"></div>
+              <div class="border-circle"></div>
+            </div>
+            <div class="left-border">
+              <div class="border-circle"></div>
+              <div class="border-line vertical"></div>
+            </div>
+            <p>
+              <span style="font-family: GraphikMedium; color: #b721ff"
+                >Connected weekend</span
+              >
+              is an event of two days, organized by
+              <span style="font-family: GraphikMedium; color: #21d4fd">CSE</span
+              >, the event will hold a conference that introduces the
+              participants to the world of
+              <span style="font-family: GraphikMedium; color: #b721ff"
+                >IoT (internet of things)</span
+              >, addition to that ,two workshops are planed , the first one will
+              be about building a basic project and the second one will cover
+              more topics . The event will be wrapped up by a competition
+              between teams where the winner will have an award
+            </p>
+          </div>
+        </div>
+        <div class="about-content">
+          <h1 id="speakers">SPEAKERS</h1>
+          <div class="speakers">
+            <div class="speaker">
+              <div class="speaker-top"></div>
+              <div class="speaker-left"></div>
+              <div class="speaker-right"></div>
+              <div class="speaker-bottom"></div>
+              <img class="speaker-img" src="./assets/avatar.svg" alt="avatar" />
+              <div class="info">
+                <h2 class="speaker-name">Jhon Doe</h2>
+                <p class="speaker-info">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  Lorem Ipsum is simply dummy text
+                </p>
+              </div>
+            </div>
+
+            <div class="speaker">
+              <div class="speaker-top"></div>
+              <div class="speaker-left"></div>
+              <div class="speaker-right"></div>
+              <div class="speaker-bottom"></div>
+              <img class="speaker-img" src="./assets/coach1.jpg" alt="avatar" />
+              <div class="info">
+                <h2 class="speaker-name">Bensmati Amira</h2>
+                <p class="role">Coach</p>
+                <p class="speaker-info">
+                  Electronics & Embedded-Systems Student
+                </p>
+              </div>
+            </div>
+
+            <div class="speaker">
+              <div class="speaker-top"></div>
+              <div class="speaker-left"></div>
+              <div class="speaker-right"></div>
+              <div class="speaker-bottom"></div>
+              <img class="speaker-img" src="./assets/conf1.jpg" alt="avatar" />
+              <div class="info">
+                <h2 class="speaker-name">Bouhamida ilyes</h2>
+                <p class="role">Speaker</p>
+                <p class="speaker-info">
+                  Automation Engineer with 7 years industry experience in
+                  control system design, programming and commissioning
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- <a href="/agenda.html">See Agenda</a> -->
+        </div>
+      </div>
+      <div class="conference">
+        <h1>Conference</h1>
+        <div class="conf">
+          <img
+            src="./assets/iot-circuit.svg"
+            alt="iot-city"
+            width="200px"
+            height="200px"
+            class="circuit"
+          />
+          <div class="about-conf">
+            <div class="conf-top">
+              <div class="conf-circle"></div>
+              <div class="conf-line"></div>
+              <div class="conf-circle"></div>
+            </div>
+            <div class="conf-bot">
+              <div class="conf-circle"></div>
+              <div class="conf-line"></div>
+              <div class="conf-circle"></div>
+            </div>
+            <p>
+              The event will start with a conference ,and during this conference
+              , we will be disccussing an overview of the Io with experts
+              speakers . There will also be a simple concept about the needs and
+              requirements of IoT projects: talking about Arduino, Raspberry Pi
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="workshops">
+        <h1>Workshops</h1>
+        <div class="workshops-container">
+          <div class="workshop">
+            <img
+              src="./assets/raspberry.svg"
+              alt="raspberry-pi"
+              width="100px"
+              height="100px"
+            />
+            <h3>« Raspberry Pi Mini Projects » Try it yourself !</h3>
+            <p>
+              In the first workshop, participants will be learning , and making
+              with Raspberry Pi mini projects which they can try themselves with
+              the help of a coach
+            </p>
+          </div>
+
+          <div class="workshop">
+            <img
+              src="./assets/arduino.svg"
+              alt="arduino"
+              width="100px"
+              height="100px"
+            />
+            <h3>How to build mini projects with ARDUINO !</h3>
+            <p>
+              In the second workshop participants will be working on some ideas,
+              developing and building it up to reach a project using ARDUINO
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="agenda" class="agenda-section">
+        <h1>Agenda</h1>
+        <div class="agenda">
+          <div class="day">
+            <div class="header">
+              <h2 class="number">Day 01</h2>
+              <div class="rectangle"></div>
+            </div>
+            <div class="agenda-content">
+              <div class="agenda-item">
+                <p class="time">
+                  <span style="color: #21d4fd; font-family: GraphikMedium"
+                    >8:30 - 9:30</span
+                  >
+                  <br />
+                  Opening Ceremony
+                </p>
+                <div class="shape">
+                  <div class="circle"></div>
+                  <div class="line"></div>
+                </div>
+              </div>
+              <div class="agenda-item">
+                <p class="time">
+                  <span style="color: #21d4fd; font-family: GraphikMedium"
+                    >09:40 - 10:30</span
+                  >
+                  <br />
+                  Conference : IoT For Smart Living
+                </p>
+                <div class="shape">
+                  <div class="circle"></div>
+                  <div class="line"></div>
+                </div>
+              </div>
+              <div class="agenda-item">
+                <p class="time">
+                  <span style="color: #21d4fd; font-family: GraphikMedium"
+                    >10:30 - 11:00</span
+                  >
+                  <br />
+                  Organizing Team and Equipements
+                </p>
+                <div class="shape">
+                  <div class="circle"></div>
+                  <div class="line"></div>
+                </div>
+              </div>
+
+              <div class="agenda-item">
+                <p class="time">
+                  <span style="color: #21d4fd; font-family: GraphikMedium"
+                    >11:00 - 12:30</span
+                  >
+                  <br />
+                  Workshop 1 : How To Build Mini Projects With Raspberry Pi
+                  <br />
+                  Workshop 2: Build Your First Project With Arduino
+                </p>
+                <div class="shape">
+                  <div class="circle"></div>
+                  <div class="line"></div>
+                </div>
+              </div>
+
+              <div class="agenda-item">
+                <p class="time">
+                  <span style="color: #21d4fd; font-family: GraphikMedium"
+                    >12:30 - 13:30</span
+                  >
+                  <br />
+                  Lunch Break
+                </p>
+                <div class="shape">
+                  <div class="circle"></div>
+                  <div class="line"></div>
+                </div>
+              </div>
+
+              <div class="agenda-item">
+                <p class="time">
+                  <span style="color: #21d4fd; font-family: GraphikMedium"
+                    >13:30 - 17:30</span
+                  >
+                  <br />
+                  Back To The Workshops
+                </p>
+                <div class="shape">
+                  <div class="circle"></div>
+                  <div class="line"></div>
+                </div>
+              </div>
+
+              <div class="agenda-item">
+                <p class="time">
+                  <span style="color: #21d4fd; font-family: GraphikMedium"
+                    >17:30</span
+                  >
+                  <br />Tea / Coffee Break
+                </p>
+                <div class="shape">
+                  <div class="circle"></div>
+                  <div class="line"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--day 2-->
+          <div class="day">
+            <div class="header">
+              <h2 class="number">Day 02</h2>
+              <div class="rectangle"></div>
+            </div>
+            <div class="agenda-content">
+              <div class="agenda-item">
+                <p class="time">
+                  <span style="color: #21d4fd; font-family: GraphikMedium"
+                    >8:30 - 9:00</span
+                  >
+                  <br />
+                  Welcoming Participants
+                </p>
+                <div class="shape">
+                  <div class="circle"></div>
+                  <div class="line"></div>
+                </div>
+              </div>
+              <div class="agenda-item">
+                <p class="time">
+                  <span style="color: #21d4fd; font-family: GraphikMedium"
+                    >09:00 - 09:30</span
+                  >
+                  <br />
+                  Opening Ceremony
+                </p>
+                <div class="shape">
+                  <div class="circle"></div>
+                  <div class="line"></div>
+                </div>
+              </div>
+              <div class="agenda-item">
+                <p class="time">
+                  <span style="color: #21d4fd; font-family: GraphikMedium"
+                    >10:00 - 10:30</span
+                  >
+                  <br />
+                  Teams Formation / Start of The Competetion
+                </p>
+                <div class="shape">
+                  <div class="circle"></div>
+                  <div class="line"></div>
+                </div>
+              </div>
+
+              <div class="agenda-item">
+                <p class="time">
+                  <span style="color: #21d4fd; font-family: GraphikMedium"
+                    >10:30 - 12:30</span
+                  >
+                  <br />
+                  Competetion
+                </p>
+                <div class="shape">
+                  <div class="circle"></div>
+                  <div class="line"></div>
+                </div>
+              </div>
+
+              <div class="agenda-item">
+                <p class="time">
+                  <span style="color: #21d4fd; font-family: GraphikMedium"
+                    >12:30 - 13:30</span
+                  >
+                  <br />
+                  Lunch Break
+                </p>
+                <div class="shape">
+                  <div class="circle"></div>
+                  <div class="line"></div>
+                </div>
+              </div>
+
+              <div class="agenda-item">
+                <p class="time">
+                  <span style="color: #21d4fd; font-family: GraphikMedium"
+                    >13:30 - 16:30</span
+                  >
+                  <br />
+                  Back To The Competetion
+                </p>
+                <div class="shape">
+                  <div class="circle"></div>
+                  <div class="line"></div>
+                </div>
+              </div>
+
+              <div class="agenda-item">
+                <p class="time">
+                  <span style="color: #21d4fd; font-family: GraphikMedium"
+                    >16:30 - 17:30</span
+                  >
+                  <br />
+                  Projects Presentations
+                </p>
+                <div class="shape">
+                  <div class="circle"></div>
+                  <div class="line"></div>
+                </div>
+              </div>
+
+              <div class="agenda-item">
+                <p class="time">
+                  <span style="color: #21d4fd; font-family: GraphikMedium"
+                    >17:30 : 18:00</span
+                  >
+                  <br />Tea / Coffee Break
+                </p>
+                <div class="shape">
+                  <div class="circle"></div>
+                  <div class="line"></div>
+                </div>
+              </div>
+
+              <div class="agenda-item">
+                <p class="time">
+                  <span style="color: #21d4fd; font-family: GraphikMedium"
+                    >18:00 : 18:30</span
+                  >
+                  <br />Winners Announcement
+                </p>
+                <div class="shape">
+                  <div class="circle"></div>
+                  <div class="line"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- day2 -->
+
+          <!-- day 3 -->
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <div class="faq" id="faq">
+        <div class="custom-shape-divider-top-1613769887">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+              opacity=".25"
+              class="shape-fill"
+            ></path>
+            <path
+              d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+              opacity=".5"
+              class="shape-fill"
+            ></path>
+            <path
+              d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
+        <h1>FAQ</h1>
+        <div class="questions">
+          <div class="question">
+            <div class="visible">
+              <div class="visible-top">
+                <p>What is Connected Weekend ?</p>
+                <img id="chevron-1" src="./assets/chevron.svg" alt="" />
+              </div>
+              <div id="answer1" class="answer">
+                <p>
+                  Connected Weekend is an event that gathers the IoT enthusiats
+                  into a competetive environement all that provided by the best
+                  club in history CSE
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="question">
+            <div class="visible">
+              <div class="visible-top">
+                <p>How Can I Register ?</p>
+                <img id="chevron-2" src="./assets/chevron.svg" alt="" />
+              </div>
+              <div id="answer2" class="answer">
+                <p>Simply By Clicking on The Register Button</p>
+                <a href="/register">Register</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="question">
+            <div class="visible">
+              <div class="visible-top">
+                <p>When Will Take Place And Where ?</p>
+                <img id="chevron-3" src="./assets/chevron.svg" alt="" />
+              </div>
+              <div id="answer3" class="answer">
+                <p>Simply By Clicking on The Register Button</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slider1">
+      <img src="./assets/logo.svg" alt="logo" width="100px" height="100px" />
+    </div>
+    <!-- <div class="slider2">
+      <h1>Connected Weekend</h1>
+    </div> -->
+
+    <div class="intro">
+      <div class="intro-text">
+        <h1 class="hide">
+          <span class="text">Connected Weekend</span>
+        </h1>
+        <!-- <h3 class="hide">
+          <span class="text">Join The IOT</span>
+        </h3>
+        <h3 class="hide">
+          <span class="text">Adventure.</span>
+        </h3> -->
+      </div>
+    </div>
+    <!-- <div class="slider"></div> -->
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+      integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+      integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

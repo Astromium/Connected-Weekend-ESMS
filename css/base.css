@@ -1,0 +1,38 @@
+@font-face {
+  font-family: GraphikLight;
+  src: url(../assets/fonts/GraphikLight.otf);
+}
+
+@font-face {
+  font-family: GraphikMedium;
+  src: url(../assets/fonts/GraphikMedium.otf);
+}
+
+@font-face {
+  font-family: GraphikBold;
+  src: url(../assets/fonts/GraphikBold.otf);
+}
+
+:root {
+  --dark-violet: #7f187d;
+  --cyan: #0acffe;
+  --cyan-gradient1: #21d4fd;
+  --violet-gradient1: #b721ff;
+  --violet-gradient2-dark: #6028e4;
+  --violet-gradient2-light: #9e208e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  font-family: GraphikMedium;
+  position: relative;
+  background-color: #f8f8ff;
+}
