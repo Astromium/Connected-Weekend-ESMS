@@ -165,6 +165,7 @@ window.onload = setTimeout(() => {
     scrollTrigger: {
       trigger: ".agenda-section",
       start: "top center",
+      toggleActions: "restart none none reverse",
     },
   });
 
@@ -173,6 +174,8 @@ window.onload = setTimeout(() => {
     scrollTrigger: {
       trigger: ".speaker",
       start: "center bottom",
+
+      toggleActions: "restart none none reverse",
     },
   });
 
@@ -180,6 +183,7 @@ window.onload = setTimeout(() => {
     scrollTrigger: {
       trigger: ".event-desc",
       start: "center bottom",
+      toggleActions: "restart none none reverse",
     },
   });
 
@@ -187,6 +191,7 @@ window.onload = setTimeout(() => {
     scrollTrigger: {
       trigger: ".workshops",
       start: "center bottom",
+      toggleActions: "restart none none reverse",
     },
   });
 
@@ -194,6 +199,7 @@ window.onload = setTimeout(() => {
     scrollTrigger: {
       trigger: ".conference",
       start: "center bottom",
+      toggleActions: "restart none none reverse",
     },
   });
 
@@ -201,6 +207,7 @@ window.onload = setTimeout(() => {
     scrollTrigger: {
       trigger: ".faq",
       start: "top center",
+      toggleActions: "restart none none reverse",
     },
   });
 
@@ -208,6 +215,7 @@ window.onload = setTimeout(() => {
     scrollTrigger: {
       trigger: ".footer",
       start: "center bottom",
+      toggleActions: "restart none none reverse",
     },
   });
 
@@ -265,6 +273,7 @@ window.onload = setTimeout(() => {
     scale: 0,
     transformOrigin: "center",
     duration: 0.4,
+    stagger: 0.2,
   });
 
   tl6
