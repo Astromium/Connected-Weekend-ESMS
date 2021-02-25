@@ -261,23 +261,29 @@ window.onload = setTimeout(() => {
     .from(".video", { opacity: 0, y: -20, duration: 0.5 })
     .from(".horizontal", { width: 0, duration: 1 })
     .from(".vertical", { height: 0, duration: 1 }, "-=0.8")
-    .from(".border-circle", { x: 10, opacity: 0, duration: 0.2 })
-    .from(
-      ".animated-blob",
-      { opacity: 0, scale: 0 },
-      { opacity: 1, scale: 1, duration: 0.5, delay: 0.5 }
-    );
+    .from(".border-circle", { x: 10, opacity: 0, duration: 0.2 });
+  // .from(
+  //   ".animated-blob",
+  //   { opacity: 0, scale: 0 },
+  //   { opacity: 1, scale: 1, duration: 0.5, delay: 0.5 }
+  // );
 
-  tl5.from(".workshop", {
+  // tl5.from(".workshop", {
+  //   opacity: 0,
+  //   scale: 0,
+  //   transformOrigin: "center",
+  //   duration: 0.4,
+  //   stagger: 0.2,
+  // });
+  tl5.from(".workshop-content", {
+    x: -20,
     opacity: 0,
-    scale: 0,
-    transformOrigin: "center",
-    duration: 0.4,
-    stagger: 0.2,
+    duration: 0.5,
+    stagger: 0.3,
   });
 
   tl6
-    .from(".circuit", { opacity: 0, x: -100, duration: 0.3 })
+    //.from(".circuit", { opacity: 0, x: -100, duration: 0.3 })
     .from(".conf-line", {
       scaleX: 0,
       transformOrigin: "center",
